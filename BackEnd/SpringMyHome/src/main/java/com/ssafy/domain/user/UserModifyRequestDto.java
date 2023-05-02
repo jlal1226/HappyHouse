@@ -1,17 +1,16 @@
-package com.ssafy.domain;
+package com.ssafy.domain.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Setter
 @Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
-    String id;
+public class UserModifyRequestDto {
     String userId;
-    String password;
-
+    String username;
+    String address;
 }

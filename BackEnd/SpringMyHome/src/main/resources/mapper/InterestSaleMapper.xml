@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.mapper.InterestSaleMapper">
+
+    <insert id = "insertInterest" parameterType="map">
+        insert into interest_sale(userId, dealNo) values(#{userId}, #{dealNo})
+    </insert>
+    <delete id = "deleteInterest" parameterType="map">
+        delete from interest_sale where userId == #{userId} and dealNo == #{dealNo}
+    </delete>
+    <select id = "showInterests" parameterType="string" resultType="InterestSaleInfo">
+
+    </select>
+</mapper>

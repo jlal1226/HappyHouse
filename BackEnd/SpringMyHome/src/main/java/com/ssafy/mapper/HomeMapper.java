@@ -11,9 +11,5 @@ import java.util.Map;
 public interface HomeMapper {
 
     List<HouseSearchResponseDTO> getHouseSearchResponses(Map<String, String> keywordMap);
-    int insertInterest(String homeDealNo, String userId);
-    int deleteInterest(String homeDealNo, String userId);
-
-    List<InterestSaleInfo> showInterest(String userId);
     int showDealDetail(String homeDealNo);//-> return type 바꿔야됨
 }

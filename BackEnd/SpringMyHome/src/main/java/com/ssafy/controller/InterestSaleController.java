@@ -1,7 +1,7 @@
 package com.ssafy.controller;
 
 import com.ssafy.domain.InterestSaleInfo;
-import com.ssafy.domain.User;
+import com.ssafy.domain.user.User;
 import com.ssafy.service.InterestSaleService;
 import java.util.HashMap;
 import java.util.List;
